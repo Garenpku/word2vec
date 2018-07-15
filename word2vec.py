@@ -1,5 +1,4 @@
 from sklearn.preprocessing import OneHotEncoder
-from clean import clean_str
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -11,7 +10,7 @@ import re
 Word2Vec Interface Usage:
 
 Parameters:
-raw_text : A list of sentences, format like: [['I', 'like', 'apples'], ['Ice-creams', 'are', 'tasty']]
+raw_text : A list of sentences, format like: ["I love apples.", "Ice-creams are tasty."]
 batch_size
 embedding_size : dimension of word representation
 window_size : number of neighbors to predict in skip-gram model
